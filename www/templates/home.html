@@ -1,0 +1,26 @@
+<ion-view view-title="Home" class="home">
+    <ion-content>
+        <ion-list ng-if="user">
+            <div class="profile" ng-if="user.picture" style="background-image: url({{user.picture}})"></div>
+            <h2 ng-if="user.name">{{user.name}}</h2>
+            <ion-item ng-if="user.first_name">
+                <p>Firstname: {{user.first_name}}</p>
+            </ion-item>
+            <ion-item ng-if="user.last_name">
+                <p>Lastname: {{user.last_name}}</p>
+            </ion-item>
+            <ion-item ng-if="user.email">
+                <p>Email: {{user.email}}</p>
+            </ion-item>
+            <ion-item ng-if="user.gender">
+                <p>Gender: {{user.gender}}</p>
+            </ion-item>
+            <ion-item ng-if="user.birthday">
+                <p>Birthday: {{user.birthday}}</p>
+            </ion-item>
+            <div class="button-container">
+                <button class="button button-assertive" ng-click="logout()">Logout</button>
+            </div>
+        </ion-list>
+    </ion-content>
+</ion-view>

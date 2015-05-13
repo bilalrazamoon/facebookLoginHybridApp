@@ -1,0 +1,44 @@
+/*login*/
+.form {
+    width: 100%;
+    margin: auto;
+    max-width: 250px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.form .button-positive{
+    background-color: #3b5998;
+    border: none;
+}
+.form .button-positive.activated{
+    background-color: #4772bd;
+    border: none;
+}
+
+/*home*/
+.home .profile{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+.home h2{
+    margin: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+.home .item p{
+    text-align: center;
+}
+.home .button-container{
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 5px;
+}
